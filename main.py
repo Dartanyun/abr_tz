@@ -20,7 +20,7 @@ def get_date(r):
 
 
 def post(raz_days: int):
-    MY_PHONE: int = 895195856388
+    MY_PHONE: int = 88005553535
     URL: str = 'http://sirius.abr95.ru/api/token/v1/5bca212e899b0da01dd6a6675f5cd50c'
     if raz_days < 7:
         value = {"days": raz_days, "alarm": "true", "phone": MY_PHONE}
