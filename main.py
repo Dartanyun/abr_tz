@@ -25,15 +25,14 @@ token_dict = {
 }
 
 
-def get_api_answer():
+def get_api_answer(url):
     """Отправляем запрос на эндпоинт API с базой данных."""
     params = {
         'td': DB_TD,
         'login': DB_LOGIN,
         'pwd': DB_PWD
     }
-    request = requests.get(DB_ENDPOINT, params=params)
-    print()
+    request = requests.get(url, params=params)
     if request.status_code != 200:
         raise exceptions.EndPointIsNotAvailiable(request.status_code)
     return request.json()
