@@ -12,9 +12,10 @@ MY_PHONE = os.getenv('MY_PHONE')
 DB_TD = os.getenv('DB_TD')
 DB_LOGIN = os.getenv('DB_LOGIN')
 DB_PWD = os.getenv('DB_PWD')
+POST_TOKEN = os.getenv('POST_TOKEN')
 
 TODAY = dt.datetime.now()
-POST_ENDPOINT = 'http://sirius.abr95.ru/api/token/v1/5bca212e899b0da01dd6a6675f5cd50c/'
+POST_ENDPOINT = f'http://sirius.abr95.ru/api/token/v1/{POST_TOKEN}/'
 DB_ENDPOINT = 'http://test-server.abs95.ru/api/admin/v1/lic/readfile'
 
 token_dict = {
